@@ -1,0 +1,20 @@
+.topcover {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)) ,url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.topcover h1,h2{
+    color: bisque;
+}
+
+.btn-input{
+    width: 50%;
+    margin-top: 30px;
+}

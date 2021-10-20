@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import AppNavbar from './componets/navbar';
+import { MYContext } from './context';
+import Home from './pages/home'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Errpage from './pages/404/404';
+import Login from './pages/login/login';
+import Signup from './pages/signup/signup';
+import {useContext,useEffect} from 'react';
+import axios from './Axios'
+import Favorites from './pages/favorite/Favorites';
+
+
 
 function App() {
+  const {user,setUser}= useContext(MYContext);
+  useEffect(()=>{
+axios.post("/auto-login")
+.then(({data})=>setUser(data))
+.catch((err)=> console.log(err))
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+   <AppNavbar />
+    <Switch>
+    <Route exact path="/">    <Home /></Route>
+       {!user && (<>
+      <Route exact path="/login">    <Login /></Route>
+      <Route exact path="/signup">    <Signup /></Route>
+      </>)}
+      { user && ( <Route exact path="/my-favorites">   <Favorites /> </Route>)}
+      <Route > <Errpage/></Route>
+      <Route exact path="/err" > <Errpage/></Route>
+    </Switch>
+    </Router>
   );
 }
 
