@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://myrecipes02-backend.herokuapp.com';
 axios.interceptors.request.use(
     (config)=>{
 const token = localStorage.getItem('token');
