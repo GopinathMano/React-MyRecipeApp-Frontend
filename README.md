@@ -17,7 +17,8 @@ CSS
 
 ### `MY RecipeApp`
 
-#[Live version]"https://myrecipes02.netlify.app/"
+####[Live version link](https://myrecipes02.netlify.app/)
+
 
 ### `npm start`
 
