@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+### `Technologies used`
+React
+React-DOM
+Create-React-App
+React Hooks
+React Router
+Eslint
+npm
+CSS  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `MY RecipeApp`
 
-## Available Scripts
-
-In the project directory, you can run:
+#[Live version]"https://myrecipes02.netlify.app/"
 
 ### `npm start`
 
