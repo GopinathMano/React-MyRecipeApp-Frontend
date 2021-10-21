@@ -1,11 +1,18 @@
 ### `Technologies used`
 React
+
 React-DOM
+
 Create-React-App
+
 React Hooks
+
 React Router
+
 Eslint
+
 npm
+
 CSS  
 
 ### `MY RecipeApp`
