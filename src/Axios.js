@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = 'https://myrecipes02-backend.herokuapp.com';
+axios.defaults.baseURL = 'https://gopi-recipe-api.herokuapp.com';
 axios.interceptors.request.use(
     (config)=>{
 const token = localStorage.getItem('token');
