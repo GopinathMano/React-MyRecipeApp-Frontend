@@ -19,6 +19,13 @@ CSS
 
 ####[Live version link](https://myrecipes02.netlify.app/)
 
+### `Login credentials`
+
+Email - test@gmail.com
+PWD - Test123
+
+
+
 
 ### `npm start`
 
